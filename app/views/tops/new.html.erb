@@ -1,0 +1,7 @@
+<%= form_for @top , url: {action: :create} do |f| %>
+<%= f.label :uid, 'ユーザー名' %>
+<%= f.text_field :uid %>
+<%= f.label :password_digest, 'パスワード' %>
+<%= f.text_field :password_digest %>
+<%= f.submit '登録' %>
+<% end %>
